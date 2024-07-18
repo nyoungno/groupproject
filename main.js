@@ -1,4 +1,4 @@
-let wr_1Value = "공연"
+
 let dataList = [];
 let showList = []
 let popUpScreen = document.getElementById("pop-box")
@@ -7,7 +7,7 @@ titleText.forEach((E)=>
 E.addEventListener("click",(event) => popText(event)))
 
 const url = new URL(
-  `https://stargolf.info/API_TEST/get_tasks.php?category=${wr_1Value}`
+  `https://stargolf.info/API_TEST/get_tasks.php?limit=111`
 );
 
 const getData = async () => {
@@ -36,8 +36,10 @@ const getData = async () => {
 getData()
 
 const showRender = () => {
-  
-  showList = dataList
+  showList = dataList.filter((e)=>{
+    return e.wr_1 == "공연"
+})
+  console.log("aaa",showList)
   let showHTML = []
   showHTML = showList.map(show=>
       `<div class="col">
