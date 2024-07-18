@@ -1,0 +1,117 @@
+.body {
+  margin: 10em;
+}
+a {
+  text-decoration: none;
+  /* 밑줄 제거 */
+  color: inherit;
+  /* 부모 요소의 색상을 상속받음 */
+}
+.tourism-container {
+  padding: 7px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid aqua; */
+  /* color: aqua; */
+  /* position: relative; */
+}
+.tourism-title {
+  font-size: 2vh;
+  text-align: center;
+}
+.tourism-first-img {
+  border-radius: 10px;
+  width: 100%;
+  height: 60vh;
+}
+.tourism-img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.tourism-size-lg {
+  width: 30vw;
+  height: 70vh;
+}
+.tourism-arrow-left {
+  position: absolute;
+  left: 10%;
+  bottom: 60%;
+}
+.tourism-arrow-left:hover {
+  cursor: pointer;
+}
+.tourism-arrow-right {
+  position: absolute;
+  left: 86vw;
+  bottom: 60%;
+  z-index: 1;
+}
+.tourism-arrow-right:hover {
+  cursor: pointer;
+}
+.view-mobile {
+  display: none;
+}
+
+.tourism-mobile-arrow-right {
+  display: none;
+}
+.tourism-image-touch:hover {
+  cursor: pointer;
+}
+#tourismPopup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+
+  padding: 2%;
+
+  top: 20%;
+  left: 20%;
+  width: 50%;
+  height: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  color: white;
+  border-radius: 10px;
+}
+#tourismPopup.hide {
+  display: none;
+}
+#tourismPopup div p span {
+  /* background-color: none; */
+}
+
+@media (max-width: 576px) {
+  .view-pc {
+    display: none;
+  }
+
+  .view-mobile {
+    display: block;
+    width: 320px;
+  }
+
+  .tourism-mobile-arrow-left {
+    position: relative;
+    bottom: 200px;
+    left: 8px;
+  }
+
+  .tourism-mobile-arrow-right {
+    position: relative;
+    left: 270px;
+    bottom: 223px;
+  }
+  #tourismMobilePopup.hide {
+    display: none;
+  }
+}
