@@ -60,6 +60,10 @@
     font-weight: bold;
     color: white;
 }
+.none-a{
+    color: #000;
+    text-decoration-line: none;
+}
 @media screen and (max-width:48rem) {
     .show-img-size{
         width: 55vw;
