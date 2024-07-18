@@ -1,0 +1,28 @@
+.shopping-body {
+  height: 80px;
+  font-weight: bolder;
+  color: rgb(34, 116, 189);
+  padding: 8px;
+  background-color: #a2d1fd;
+}
+
+.shopping-card-img {
+  height: 230px;
+}
+
+.shopping-carousel-img {
+  height: 450px;
+}
+.shopping-carousel {
+  background: rgba(0, 0, 0, 0.349);
+  border-radius: 5px;
+}
+.shopping-card-items {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+@media (max-width: 768px) {
+  .shopping-carousel-img {
+    height: 200px;
+  }
+}
